@@ -1,0 +1,23 @@
+header {
+    text-align: center;
+    background-color: #0a7aeb;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  a {
+    font-size: 25px;
+    margin: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .active {
+    color: #bdbdbd; //#c7c1c1
+    text-decoration: underline;
+  }
+  h1 {
+    font-size: 35px;
+  }

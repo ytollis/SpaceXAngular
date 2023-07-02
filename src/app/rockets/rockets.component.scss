@@ -1,0 +1,28 @@
+.rocket-unit {
+    background-color: #ebeaea ; //#bdbdbd #d7d6d6
+    box-sizing: border-box;
+    width: 50%;
+    margin: 20px auto;
+    padding: 25px;
+    box-shadow: rgb(76, 75, 75) 4px 4px 5px; //lightgray
+    img {
+        margin: 20px;
+      width: 95%;
+    }
+    h3 {
+        //text-decoration: underline;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+    }
+    .intitule {
+        vertical-align: top;
+        //width: 100px;
+        white-space: nowrap;
+        font-weight: bold;
+      }
+  }

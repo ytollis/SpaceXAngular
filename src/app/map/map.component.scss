@@ -1,0 +1,45 @@
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 200px;
+  }
+  
+  .map-frame {
+    border: 2px solid black;
+    height: 150%;
+  }
+  
+  #map {
+    height: 100%;
+  }
+
+  #legend {
+    //position: absolute;
+    //padding: 25px;
+    margin-left: 60px; 
+  }
+  
+  .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .green {
+    background-color: green;
+  }
+
+  p{
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+  }

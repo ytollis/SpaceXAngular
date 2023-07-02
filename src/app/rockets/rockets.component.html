@@ -1,0 +1,10 @@
+<div class="rocket-unit" *ngFor="let rocket of rockets">
+  <h3>{{ rocket.name }}</h3>
+  <table>
+    <tr>
+      <td class="intitule">Description :</td>
+      <td>{{ rocket.description }}</td>
+    </tr>
+  </table>
+  <img [src]="rocket.flickr_images[0]" [alt]="rocket.name" />
+</div>
