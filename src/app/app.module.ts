@@ -10,6 +10,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { CrewMembersComponent } from './crew-members/crew-members.component';
 import { MapComponent } from './map/map.component';
+import { RocketComponent } from './rocket/rocket.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { MapComponent } from './map/map.component';
     HomePageComponent,
     HeaderComponent,
     CrewMembersComponent,
-    MapComponent
+    MapComponent,
+    RocketComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

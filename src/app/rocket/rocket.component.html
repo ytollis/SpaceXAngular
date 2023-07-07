@@ -1,0 +1,36 @@
+<div class="rocket-unit">
+  <h3>{{ rocket.name }}</h3>
+  <table>
+    <tr>
+      <td class="intitule">Description :</td>
+      <td>{{ rocket.description }}</td>
+    </tr>
+    <tr>
+      <td class="intitule">Company :</td>
+      <td>{{ rocket.company }}</td>
+    </tr>
+    <tr>
+      <td class="intitule">Country :</td>
+      <td>{{ rocket.country }}</td>
+    </tr>
+    <tr>
+      <td class="intitule">First flight :</td>
+      <td>{{ rocket.first_flight }}</td>
+    </tr>
+    <tr>
+      <td class="intitule">Active :</td>
+      <td *ngIf="rocket.active === false">No</td>
+      <td *ngIf="rocket.active === true">Yes</td>
+    </tr>
+    <tr>
+      <td class="intitule">Wikipedia :</td>
+      <td>
+        <a [href]="rocket.wikipedia" target="_blank">{{ rocket.wikipedia }}</a>
+      </td>
+    </tr>
+  </table>
+  <p class="intitule">Some images :</p>
+  <div *ngFor="let image of rocket.flickr_images">
+    <img [src]="image" [alt]="rocket.name" />
+  </div>
+</div>

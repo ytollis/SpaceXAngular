@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpService } from '../services/http.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rockets',
@@ -9,11 +10,16 @@ import { HttpService } from '../services/http.service';
 export class RocketsComponent {
   rockets: any[] = [];
 
-  constructor(private httpService: HttpService) { }
+  constructor(private httpService: HttpService,
+    private router: Router) { }
 
   ngOnInit() {
     this.httpService.getRockets().subscribe((data: any) => {
       this.rockets = data;
     });
   }
+
+  onViewRocket(rocketId: string) {
+    this.router.navigateByUrl(`rockets/${rocketId}`);
+}
 }

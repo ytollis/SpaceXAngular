@@ -5,6 +5,7 @@ import { RocketsComponent } from './rockets/rockets.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CrewMembersComponent } from './crew-members/crew-members.component';
 import { MapComponent } from './map/map.component';
+import { RocketComponent } from './rocket/rocket.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
     { path: 'rockets', component: RocketsComponent },
     { path: 'crew', component: CrewMembersComponent },
     { path: 'map', component: MapComponent },
+    { path: 'rockets/:id', component: RocketComponent },
   ];
 
 

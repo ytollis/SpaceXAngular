@@ -1,4 +1,12 @@
 <div class="member-unit" *ngFor="let crewMember of crew">
-  <img [src]="crewMember.image" [alt]="crewMember.name" />
-  <p>{{ crewMember.name }}</p>
+  <div class="thefront">
+    <img [src]="crewMember.image" [alt]="crewMember.name" />
+    <p>{{ crewMember.name }}</p>
+  </div>
+
+  <div class="theback">
+    <h1>{{ crewMember.name }}</h1>
+    <p *ngIf="crewMember.status === 'active'">Active member of SpaceX</p>
+    <p>Agency : {{ crewMember.agency }}</p>
+  </div>
 </div>

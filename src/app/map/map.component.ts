@@ -14,7 +14,7 @@ export class MapComponent implements OnInit {
   landpads: any = [];
 
   private map!: L.Map;
-  private centroid: L.LatLngExpression = [42.3601, -21.0589];
+  private centroid: L.LatLngExpression = [42.3601, 20.0589];
 
   private initMap(): void {
     this.map = L.map('map', {

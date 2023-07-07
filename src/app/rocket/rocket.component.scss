@@ -5,13 +5,9 @@
     margin: 20px auto;
     padding: 25px;
     box-shadow: rgb(76, 75, 75) 4px 4px 5px; //lightgray
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     img {
-      margin: 20px;
-      width: 95%;
+        margin-bottom: 1px;
+      width: 100%;
     }
     h3 {
         //text-decoration: underline;

@@ -29,5 +29,13 @@ export class HttpService {
     return this.http.get(`${this.apiUrl}/rockets`);
   }
 
+  getRocketById(rocketId: string) {
+    return this.http.get(`${this.apiUrl}/rockets/${rocketId}`);
+  }
+
+  getCompanInfo() {
+    return this.http.get(`${this.apiUrl}/company`);
+  }
+
   // Ajoutez d'autres méthodes pour récupérer les données de l'API SpaceX, si nécessaire
 }
