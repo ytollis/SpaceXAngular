@@ -1,4 +1,4 @@
-<p>Map of launchpads & landpads positions</p>
+<!-- <p>Map of launchpads & landpads locations</p>
 <div class="map-container">
   <div class="map-frame">
     <div id="map"></div>
@@ -7,4 +7,28 @@
 <div id="legend">
   <div><span class="circle blue"></span> Launchpads</div>
   <div><span class="circle green"></span> Landpads</div>
+</div>
+ -->
+
+<h1>Map of launchpads & landpads locations</h1>
+<div class="container">
+  <div class="map-frame">
+    <div id="map"></div>
+  </div>
+  <div id="legend">
+    <div><span class="circle blue"></span> Launchpads</div>
+    <div><span class="circle green"></span> Landpads</div>
+  </div>
+  <div
+    id="tooltip"
+    [hidden]="!showTooltip"
+    [style.left.px]="tooltipPosition.x"
+    [style.top.px]="tooltipPosition.y"
+  >
+    <p [innerHTML]="tooltipText"></p>
+    <!-- {{ tooltipText }} -->
+  </div>
+</div>
+<div class="back-home-link">
+  <a routerLink="/" (click)="scrollTop()">Back to home</a>
 </div>

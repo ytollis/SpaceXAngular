@@ -1,36 +1,110 @@
-<div class="rocket-unit">
-  <h3>{{ rocket.name }}</h3>
-  <table>
-    <tr>
-      <td class="intitule">Description :</td>
-      <td>{{ rocket.description }}</td>
-    </tr>
-    <tr>
-      <td class="intitule">Company :</td>
-      <td>{{ rocket.company }}</td>
-    </tr>
-    <tr>
-      <td class="intitule">Country :</td>
-      <td>{{ rocket.country }}</td>
-    </tr>
-    <tr>
-      <td class="intitule">First flight :</td>
-      <td>{{ rocket.first_flight }}</td>
-    </tr>
-    <tr>
-      <td class="intitule">Active :</td>
-      <td *ngIf="rocket.active === false">No</td>
-      <td *ngIf="rocket.active === true">Yes</td>
-    </tr>
-    <tr>
-      <td class="intitule">Wikipedia :</td>
-      <td>
-        <a [href]="rocket.wikipedia" target="_blank">{{ rocket.wikipedia }}</a>
-      </td>
-    </tr>
-  </table>
-  <p class="intitule">Some images :</p>
-  <div *ngFor="let image of rocket.flickr_images">
-    <img [src]="image" [alt]="rocket.name" />
+<div class="rocket-contenu">
+  <h1>{{ rocket.name }}</h1>
+  <div class="back-rockets-link">
+    <a routerLink="/rockets" routerLinkActive="active">Back to rockets</a>
   </div>
+  <div class="infos-contenu">
+    <div class="info-unit">
+      <h3>Global informations</h3>
+      <table>
+        <tr>
+          <td class="intitule">Description :</td>
+          <td>{{ rocket.description }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Company :</td>
+          <td>{{ rocket.company }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Country :</td>
+          <td>{{ rocket.country }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">First flight :</td>
+          <td>{{ rocket.first_flight }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Active :</td>
+          <td *ngIf="rocket.active === false">No</td>
+          <td *ngIf="rocket.active === true">Yes</td>
+        </tr>
+        <tr>
+          <td class="intitule">Wikipedia :</td>
+          <td>
+            <a
+              class="wikipedia-link"
+              [href]="rocket.wikipedia"
+              target="_blank"
+              >{{ rocket.wikipedia }}</a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="info-unit">
+      <h3>Specific informations</h3>
+      <table>
+        <tr>
+          <td class="intitule">Height :</td>
+          <td>{{ rocket.height.meters }} m</td>
+        </tr>
+        <tr>
+          <td class="intitule">Diameter :</td>
+          <td>{{ rocket.diameter.meters }} m</td>
+        </tr>
+        <tr>
+          <td class="intitule">Mass :</td>
+          <td>{{ rocket.mass.kg }} kg</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="info-unit">
+      <h3>Engines</h3>
+      <table>
+        <tr>
+          <td class="intitule">Number :</td>
+          <td>{{ rocket.engines.number }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Type :</td>
+          <td>{{ rocket.engines.type }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Version :</td>
+          <td>{{ rocket.engines.version }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Layout :</td>
+          <td>{{ rocket.engines.layout }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Engine loss max :</td>
+          <td>{{ rocket.engines.engine_loss_max }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Propellant 1 :</td>
+          <td>{{ rocket.engines.propellant_1 }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Propellant 2 :</td>
+          <td>{{ rocket.engines.propellant_2 }}</td>
+        </tr>
+        <tr>
+          <td class="intitule">Thrust to weight :</td>
+          <td>{{ rocket.engines.thrust_to_weight }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="info-unit spef-image">
+    <h3>Images</h3>
+    <div *ngFor="let image of rocket.flickr_images">
+      <img [src]="image" [alt]="rocket.name" />
+    </div>
+  </div>
+</div>
+<div class="back-home-link">
+  <a routerLink="/" (click)="scrollTop()">Back to home</a>
 </div>

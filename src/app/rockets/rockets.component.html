@@ -1,11 +1,17 @@
-<div class="rocket-unit" *ngFor="let rocket of rockets">
-  <h3>{{ rocket.name }}</h3>
-  <table>
-    <tr>
-      <td class="intitule">Description :</td>
-      <td>{{ rocket.description }}</td>
-    </tr>
-  </table>
-  <img [src]="rocket.flickr_images[0]" [alt]="rocket.name" />
-  <button (click)="onViewRocket(rocket.id)">Details</button>
+<div class="rockets-contenu">
+  <h1>Rockets</h1>
+  <div class="rocket-unit" *ngFor="let rocket of rockets">
+    <h3>{{ rocket.name }}</h3>
+    <table>
+      <tr>
+        <td class="intitule">Description :</td>
+        <td>{{ rocket.description }}</td>
+      </tr>
+    </table>
+    <img [src]="rocket.flickr_images[0]" [alt]="rocket.name" />
+    <button (click)="onViewRocket(rocket.id)">Details</button>
+  </div>
+</div>
+<div class="back-home-link">
+  <a routerLink="/" (click)="scrollTop()">Back to home</a>
 </div>

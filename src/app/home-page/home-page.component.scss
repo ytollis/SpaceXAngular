@@ -3,7 +3,23 @@
     //top: 50%;
     //left: 50%;
     //transform: translate(-50%, -50%);
+    text-align: center;
 }
 img {
-    margin-left: 30%;
+    margin-left: 5%;
+    //margin-top: 5%
+    height: 60%;
+    width: 60%;
+    margin-bottom: 150px;
+}
+.presentation{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+//img,
+.presentation,
+.figures,
+.structure,
+.address {
+    margin-bottom: 100px;
 }

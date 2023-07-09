@@ -1,12 +1,28 @@
-<div class="member-unit" *ngFor="let crewMember of crew">
-  <div class="thefront">
-    <img [src]="crewMember.image" [alt]="crewMember.name" />
-    <p>{{ crewMember.name }}</p>
-  </div>
+<h1>Crew members</h1>
+<input
+  class="search-bar"
+  type="text"
+  [(ngModel)]="searchTerm"
+  placeholder="Search members..."
+/>
+<div class="crew-contenu">
+  <div class="member-unit" *ngFor="let crewMember of filterCrewMembers()">
+    <div class="thefront">
+      <img [src]="crewMember.image" [alt]="crewMember.name" />
+      <p>{{ crewMember.name }}</p>
+    </div>
 
-  <div class="theback">
-    <h1>{{ crewMember.name }}</h1>
-    <p *ngIf="crewMember.status === 'active'">Active member of SpaceX</p>
-    <p>Agency : {{ crewMember.agency }}</p>
+    <div class="theback">
+      <h1>{{ crewMember.name }}</h1>
+      <p *ngIf="crewMember.status === 'active'">Active member of SpaceX</p>
+      <p>Agency : {{ crewMember.agency }}</p>
+      <p>
+        More informations on
+        <a [href]="crewMember.wikipedia" target="_blank">Wikipedia</a>
+      </p>
+    </div>
+  </div>
+  <div class="back-home-link">
+    <a routerLink="/" (click)="scrollTop()">Back to home</a>
   </div>
 </div>

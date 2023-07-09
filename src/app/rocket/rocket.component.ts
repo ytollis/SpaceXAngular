@@ -19,5 +19,12 @@ export class RocketComponent {
       this.rocket = data;
     });
   }
+  scrollTop() {
+    //this.router.navigate(['/']);
+  
+    setTimeout(() => {
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    }, 100);
+  }
 
 }

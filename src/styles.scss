@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "node_modules/leaflet/dist/leaflet.css";
+body{
+  font-family:Verdana;
+  background-color:black;
+  color: white;
+}
 button {
     //background-color: transparent;
     //box-sizing: border-box;
@@ -13,5 +18,32 @@ button {
     &:active {
       transform: translate(1px, 1px);
       box-shadow: lightgray 0 0 5px;
+    }
+  }
+  a {
+    color: rgb(119, 156, 223) //rgb(59, 104, 187)
+  }
+  a:hover {
+    color:rgb(97, 117, 155); // antiquewhite
+    text-decoration: underline;
+  }
+  h1{
+    color: rgb(119, 156, 223);
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .back-home-link{
+    padding-top: 3%;
+    text-align: center;
+    a{
+      font-family:Impact;
+    font-size: 25px;
+    margin: 25px;
+    color: #ffffff;
+    text-decoration: underline;
+    &:hover {
+      color: rgb(119, 156, 223);
+      //text-decoration: none;
+    }
     }
   }

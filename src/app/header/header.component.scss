@@ -1,23 +1,31 @@
-header {
+.contenu-header {
     text-align: center;
-    background-color: #0a7aeb;
-    margin-bottom: 20px;
-    padding: 10px;
+    //background-color: #3a3560 ; // #0a7aeb #ac6969 #3a3560 #423c6e
+    //margin-bottom: 20px;
+    //padding: 1px;
+    //padding-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 200px;
   }
   a {
+    font-family:Impact;
     font-size: 25px;
     margin: 25px;
     color: #ffffff;
     text-decoration: none;
     &:hover {
-      text-decoration: underline;
+      //text-decoration: underline;
+      color: rgb(119, 156, 223);
     }
   }
   
   .active {
-    color: #bdbdbd; //#c7c1c1
-    text-decoration: underline;
+    color: rgb(119, 156, 223);//#bdbdbd; //#c7c1c1
+    //text-decoration: underline;
   }
-  h1 {
+  .tqt {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 35px;
+    font-weight: bold;
+    color: #484178;
   }

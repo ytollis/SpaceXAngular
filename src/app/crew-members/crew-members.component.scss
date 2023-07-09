@@ -1,3 +1,17 @@
+.crew-contenu{
+  text-align: center;
+}
+.search-bar {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-left: 37.5%;
+  font-size: 16px;
+  color: #333;
+  width: 350px;
+}
 .member-unit {
     //width: 100%;
     //height: 100%;
@@ -11,9 +25,9 @@
     display: inline-block;
     width: 250px;
     height: 350px;
-    margin: 1%;
+    margin: 2%;
     padding: 25px;
-    margin-left: 3.5%;
+    //margin-left: 1%;
     box-shadow: lightgray 4px 4px 5px;
     text-align: center;
     //vertical-align: top;
@@ -39,16 +53,14 @@
   }
 
   .thefront {
-    position: absolute;
-    top: 0;
-    left: 0;
+    //top: 0;
+    //left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    backface-visibility: hidden;
-    overflow: hidden;
+    //border-radius: 10px;
+    //backface-visibility: hidden;
+    //overflow: hidden;
     color: #000;
-    //margin-top: 5%;
   }
 
   .theback {
@@ -76,10 +88,12 @@
 
   .theback p {
     font-family: "zilla slab", sans-serif;
-    padding: 30px;
-    font-weight: normal;
-    font-size: 12px;
     text-align: center;
+    padding: 10px;
+  }
+  .tumesoul{
+    padding-left: 3%;
+    padding-top: 4%;
   }
   
   

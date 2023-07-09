@@ -1,5 +1,5 @@
-.map-container {
-    position: fixed;
+/* .map-container {
+    position:fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -37,11 +37,71 @@
   }
   
   .green {
-    background-color: green;
+    background-color: red;
   }
 
   p{
     text-align: center;
     font-size: 18px;
     text-decoration: underline;
+  } */
+
+  .container {
+    //margin: 15%;
+    //margin-top: 13%;
+    //margin-bottom: 16%;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    z-index: 1; //Voir footer z-index: 2 pour régler problème superposition
   }
+  
+  .map-frame {
+    border: 2px solid black;
+    height: 530px;
+  }
+  
+  #map {
+    height: 100%;
+  }
+  
+  #legend {
+    margin-right: 20px; 
+    position:absolute;
+    top: 0;
+    right: -15%;
+  }
+  
+  .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .green {
+    background-color: red;
+  }
+  
+  p {
+    //text-align: center;
+    //font-size: 18px;
+    //text-decoration: underline;
+  }
+
+  #tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  

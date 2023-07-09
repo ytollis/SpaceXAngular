@@ -12,14 +12,24 @@ export class RocketsComponent {
 
   constructor(private httpService: HttpService,
     private router: Router) { }
-
-  ngOnInit() {
-    this.httpService.getRockets().subscribe((data: any) => {
-      this.rockets = data;
-    });
-  }
-
-  onViewRocket(rocketId: string) {
-    this.router.navigateByUrl(`rockets/${rocketId}`);
-}
+  
+    ngOnInit() {
+      this.httpService.getRockets().subscribe((data: any) => {
+        this.rockets = data;
+        console.log(this.rockets);
+      });
+    }
+    onViewRocket(rocketId: string) {
+      this.router.navigateByUrl(`rockets/${rocketId}`);
+      setTimeout(() => {
+        window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+      }, 100);
+    }
+    scrollTop() {
+      //this.router.navigate(['/']);
+    
+      setTimeout(() => {
+        window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+      }, 100);
+    }
 }
