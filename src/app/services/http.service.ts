@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HttpService {
-  private apiUrl = 'https://api.spacexdata.com/v4'; // URL de l'API SpaceX
+  private apiUrl = 'https://api.spacexdata.com/v4';
 
   constructor(private http: HttpClient) { }
 
@@ -37,6 +36,4 @@ export class HttpService {
   getCompanInfo() {
     return this.http.get(`${this.apiUrl}/company`);
   }
-
-  // Ajoutez d'autres méthodes pour récupérer les données de l'API SpaceX, si nécessaire
 }

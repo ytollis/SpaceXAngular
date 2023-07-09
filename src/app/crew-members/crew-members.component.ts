@@ -18,13 +18,13 @@ export class CrewMembersComponent {
       this.crew = data;
     });
   }
+
   scrollTop() {
-    //this.router.navigate(['/']);
-  
     setTimeout(() => {
       window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     }, 100);
   }
+  
   filterCrewMembers() {
     if (!this.searchTerm) {
       return this.crew;

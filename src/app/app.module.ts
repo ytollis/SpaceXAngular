@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { LaunchesComponent } from './launches/launches.component';
 import { RocketsComponent } from './rockets/rockets.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
@@ -17,7 +16,6 @@ import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LaunchesComponent,
     RocketsComponent,
     HomePageComponent,
     HeaderComponent,

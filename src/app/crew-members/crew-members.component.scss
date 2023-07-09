@@ -13,24 +13,17 @@
   width: 350px;
 }
 .member-unit {
-    //width: 100%;
-    //height: 100%;
     border-radius: 10px;
     transform-style: preserve-3d;
     transition: all 0.8s ease;
     background-color: #ebeaea; //#bdbdbd
-    //box-sizing: border-box;
-    //width: 50%;
-    //margin: 20px auto;
     display: inline-block;
     width: 250px;
     height: 350px;
     margin: 2%;
     padding: 25px;
-    //margin-left: 1%;
     box-shadow: lightgray 4px 4px 5px;
     text-align: center;
-    //vertical-align: top;
   }
 
   img {
@@ -53,13 +46,8 @@
   }
 
   .thefront {
-    //top: 0;
-    //left: 0;
     width: 100%;
     height: 100%;
-    //border-radius: 10px;
-    //backface-visibility: hidden;
-    //overflow: hidden;
     color: #000;
   }
 
