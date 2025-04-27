@@ -10,7 +10,7 @@ Relancer l'éditeur ensuite.
 
 Se placer dans le dossier de votre choix, puis ouvrir un nouveau terminal
 
-Entrer la commande suivante dans le terminal : `git clone https://github.com/Yannisdu33bg/SpaceXAngular.git`
+Entrer la commande suivante dans le terminal : `git clone https://github.com/ytollis/SpaceXAngular.git`
 
 ## Étape 2
 
